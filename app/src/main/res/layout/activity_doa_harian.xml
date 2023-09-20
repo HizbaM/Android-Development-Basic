@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoaHarianActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_test">
+
+        <TextView
+            android:id="@+id/tvjudul"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/doaharian"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="30dp"
+            android:maxLines="2"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/doa"
+            android:layout_toRightOf="@id/tvjudul"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvdoaharian"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BelajarScrollViewActivity">
+
+    <ImageView
+        android:id="@+id/ivsulefilm"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/sulefilm"/>
+
+    <TextView
+        android:id="@+id/tvjudulfilm"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Awas Ada Sule"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvpenulisfilm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvjudulfilm"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Cuk FK"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/ibstarr"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/baseline_star_24"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="130dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/tvjudulfilm"/>
+
+    <TextView
+        android:id="@+id/tvratingangka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvjudulfilm"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="5.0"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvjumlahreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvjudulfilm"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="10K Reviews"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/llgenrefilm"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/ivsulefilm"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            app:cardCornerRadius="5dp"
+            >
+
+            <TextView
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comedy"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_medium"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            app:cardCornerRadius="5dp"
+            >
+
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slice of Life"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_medium"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            app:cardCornerRadius="5dp"
+            >
+
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indonesia"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_medium"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@id/llgenrefilm"
+        android:id="@+id/svsinopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/tvsinopsis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llgenrefilm"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Synopsis"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvsinopsis0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvsinopsis"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:text="This show follows the mischievous servant Sule as he goes about his ignorant ways. Sule is upset with Mrs. Tiyo/Kanjeng Mami who has hired a new maid for cooking, so he decided to return to his hometown. Even in his absence, his presence can still be felt.Kanjeng Mami then asks Mr. Tiyo to bring Sule back, what ever it takes. What other mischiefs will Sule get into next?"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvreview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvsinopsis0"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Review"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/ivyelanprofil"
+        android:layout_below="@id/tvreview"
+        android:layout_marginStart="20dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/yelanpc"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/tvyelanakun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tante Yelan"
+        android:layout_toRightOf="@id/ivyelanprofil"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="15sp"
+        android:justificationMode="inter_word"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/tvreview"
+        tools:ignore="NotSibling" />
+
+    <TextView
+
+        android:layout_toRightOf="@id/ivyelanprofil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Awas Ada Sule lucu banget, aku jadi naksir sama sule, hehehe..."
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="12sp"
+        android:justificationMode="inter_word"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/tvyelanakun"/>
+
+</RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

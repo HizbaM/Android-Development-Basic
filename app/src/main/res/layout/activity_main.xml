@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/labelform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Formulir Peminjaman"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/labelnama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Nama :"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        />
+
+        <EditText
+            android:id="@+id/inputnama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Nama"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            />
+
+    <TextView
+        android:id="@+id/labelkelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Kelas :"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/inputkelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Kelas"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+
+    <TextView
+        android:id="@+id/labelkodebuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Kode Buku :"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/inputkodebuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Kode Buku"
+        android:inputType="number"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+
+    <Button
+        android:id="@+id/buttonsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#388E3C"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Submit"
+        android:textAllCaps="false"
+        />
+
+    <TextView
+        android:id="@+id/printnama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/printkelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/printkodebuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="15sp"
+        />
+
+
+
+
+
+
+
+</LinearLayout>

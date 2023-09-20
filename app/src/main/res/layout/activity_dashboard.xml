@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <ImageButton
+        android:id="@+id/ibmenu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/baseline_sort_24"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#D50000"
+        />
+
+    <ImageView
+        android:id="@+id/ivbackground"
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+        android:background="@drawable/latihan_rectangle"
+        android:layout_alignParentEnd="true"
+        />
+
+    <ImageView
+        android:id="@+id/ivpicture"
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/nasipadang" />
+
+    <TextView
+        android:id="@+id/tvsale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ibmenu"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="220dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:letterSpacing="0.1"
+        android:text="Big Sale"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/tvdiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvsale"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:letterSpacing="0.1"
+        android:text="70%"
+        android:textColor="#D50000"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/tvlimited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvdiscount"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Limited Time!"
+        android:textColor="@color/black"
+        android:letterSpacing="0.1"
+        android:textSize="34sp" />
+
+    <View
+        android:id="@+id/viewabu1"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/tvlimited"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="20dp"
+        android:background="#C3C1C1" />
+
+    <TextView
+        android:id="@+id/tvpopular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginStart="20dp"
+        android:text="Popular"
+        android:layout_below="@id/viewabu1"
+        android:textColor="#D50000"
+        android:textSize="17sp"
+        />
+
+    <TextView
+        android:id="@+id/tvbrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="New Arrival"
+        android:layout_below="@id/viewabu1"
+        android:textColor="#D50000"
+        android:textSize="17sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tvnewarrival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="New Arrival"
+        android:layout_below="@id/viewabu1"
+        android:textColor="#818181"
+        android:textSize="17sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tvbrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Brand"
+        android:layout_below="@id/viewabu1"
+        android:textColor="#FF818181"
+        android:textSize="17sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/kafkajual"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:elevation="10dp"
+        android:layout_below="@id/tvpopular"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="100dp"
+        >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/kafkaprofil" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/yelanjual"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:elevation="10dp"
+        android:layout_below="@id/kafkajual"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/yelanprofil" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvinfokafka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvnewarrival"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="120dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Kafka Cantik"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvhargakafka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvinfokafka"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="120dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="$ 120"
+        android:textColor="#D50000"
+        android:layout_marginTop="-2dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvlokasikafka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvhargakafka"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="120dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Dunia Fantasi"
+        android:textColor="#4E4E4E"
+        android:layout_marginTop="-2dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvinfokyelan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvnewarrival"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="120dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Yelan Brutal"
+        android:textColor="@color/black"
+        android:layout_marginTop="110dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvhargayelan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvinfokyelan"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="120dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="#D50000"
+        android:text="$ 120"
+        android:layout_marginTop="-2dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvlokasiyelan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvhargayelan"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="120dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Dunia Fantasi"
+        android:textColor="#4E4E4E"
+        android:layout_marginTop="-2dp"
+        android:textSize="15sp" />
+
+</RelativeLayout>

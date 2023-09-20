@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvcoklat"
+        android:layout_width="350dp"
+        android:layout_height="550dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivmanadotua"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:src="@drawable/manadotua"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:id="@+id/tvlokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivmanadotua"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Indonesia"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tvdeskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvlokasi"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:justificationMode="inter_word"
+                android:text="Amazing view in Manado Indonesia"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/lllokasi"
+                android:layout_below="@id/tvdeskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/baseline_location_on_24"
+                    android:layout_margin="20dp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Indonesia"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="-9dp"
+                    android:fontFamily="@font/poppins_medium"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/baseline_price_check_24"
+                    android:layout_margin="20dp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100/Package"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="-9dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_below="@id/lllokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plan Trip Now"
+                android:fontFamily="@font/poppins_medium"
+
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

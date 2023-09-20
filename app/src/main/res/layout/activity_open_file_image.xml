@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OpenFIleImageActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Ambil Gambar"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <ImageButton
+        android:id="@+id/ibcamera"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/baseline_camera_alt_24"
+        android:backgroundTint="@color/black"
+        />
+
+    <ImageView
+        android:id="@+id/ivsample"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:src="@drawable/baseline_image_24"
+        />
+
+
+
+</LinearLayout>
