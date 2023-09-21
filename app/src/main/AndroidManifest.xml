@@ -13,28 +13,30 @@
         android:theme="@style/Theme.BelajarAndroidActivity"
         tools:targetApi="31">
         <activity
-            android:name=".BelajarConstraintActivity"
-            android:exported="true">
+            android:name=".FootballNewsActivity"
+            android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".BelajarConstraintActivity"
+            android:exported="true">
         </activity>
         <activity
             android:name=".DoaHarianActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".LatihanVisibilityActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".SplashScreenDoaActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".BelajarScrollViewActivity"
