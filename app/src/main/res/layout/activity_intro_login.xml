@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_color_background"
+    android:padding="5dp"
+    tools:context=".IntroLoginActivity">
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textColor="@color/white"
+        android:textSize="46sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/poppins_medium"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:padding="10dp"
+            android:id="@+id/etusername"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_background"
+            android:hint="User Name"
+            android:textColor="@color/white" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:id="@+id/etpassword"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/etusername"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_background"
+            android:hint="User Name"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_below="@id/etpassword"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tvforgotpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot your password?"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_medium" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_below="@id/tvforgotpassword"
+            android:layout_centerInParent="true"
+            android:id="@+id/btnlogin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_background"
+            android:text="Login"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

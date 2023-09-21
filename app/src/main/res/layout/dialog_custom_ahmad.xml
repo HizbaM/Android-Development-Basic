@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ahmadnaufalgerak"
+        android:contentDescription="Ahmad Naufal Terang" />
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login berhasil"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingTop="16dp"
+        android:textSize="25sp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/dialog_message0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang Hizba"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingTop="16dp"
+        android:textSize="25sp"
+        android:gravity="center" />
+
+</LinearLayout>
